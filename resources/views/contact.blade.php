@@ -3,12 +3,12 @@
 
 {{-- Title section --}}
 @section('title')
-    Contact page
+    Contactanos
 @endsection
 
 {{-- Body section --}}
 @section('content')
     <h1>
-        Contact page
+        Landing de contacto
     </h1>
 @endsection

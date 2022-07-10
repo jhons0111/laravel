@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\homeController;
+use App\Http\Controllers\coursesController;
+use App\Http\Controllers\generalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,28 +16,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
+//Home page
+Route::get('/', [homeController::class, 'index'])->name('home');
 
-//     $nombre = 'New name';
+//General pages
+Route::controller(generalController::class)->group(function(){
+    Route::get('about', 'aboutUs');
+    Route::get('contact', 'contactUs');
+});
 
-//     return view('new', ['name' => $nombre]);
-// });
-
-// Route::get('/algo/{nombre?}', function ($nombre = 'User') {
-
-//     return 'Hola' . $nombre . '<a href="' . route('contacto') . '">Contactanos page</a>';
-// });
-
-// Route::get('contactanos', function(){
-//     return view('contactanos');
-// })->name('contacto');
-
-// Set variables
-$nombre = 'First name';
-
-// Return views
-Route::view('/', 'home', ['name' => $nombre])->name('home');
-
-Route::view('about', 'about')->name('about');
-
-Route::view('contact', 'contact')->name('contact');
+//Courses pages
+Route::controller(coursesController::class)->group(function(){
+    Route::get('cursos', 'allCourses');
+    Route::get('cursos/crear', 'createCourses');
+    Route::get('cursos/{course}', 'theCourse');
+});

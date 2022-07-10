@@ -3,12 +3,12 @@
 
 {{-- Title section --}}
 @section('title')
-    Home
+    Curso de {{ $course }}
 @endsection
 
 {{-- Body section --}}
 @section('content')
     <h1>
-        Home
+        Bienvenido al curso de {{ $course }}
     </h1>
 @endsection

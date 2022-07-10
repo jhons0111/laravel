@@ -3,12 +3,12 @@
 
 {{-- Title section --}}
 @section('title')
-    Home
+    Crea un curso
 @endsection
 
 {{-- Body section --}}
 @section('content')
     <h1>
-        Home
+        Landing para crear cursos
     </h1>
 @endsection
