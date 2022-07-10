@@ -30,7 +30,7 @@ use Illuminate\Support\Facades\Route;
 // })->name('contacto');
 
 // Set variables
-$nombre = 'New name';
+$nombre = 'First name';
 
 // Return views
 Route::view('/', 'home', ['name' => $nombre])->name('home');
