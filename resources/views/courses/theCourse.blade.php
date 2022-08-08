@@ -1,10 +1,8 @@
 {{-- Header section --}}
-@extends('layout')
+@extends('layout.layout')
 
 {{-- Title section --}}
-@section('title')
-    Curso de {{ $course }}
-@endsection
+@section('title', 'Curso de' . $course )
 
 {{-- Body section --}}
 @section('content')

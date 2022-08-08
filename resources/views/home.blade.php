@@ -1,10 +1,8 @@
 {{-- Header section --}}
-@extends('layout')
+@extends('layout.layout')
 
 {{-- Title section --}}
-@section('title')
-    Home
-@endsection
+@section('title', 'Home')
 
 {{-- Body section --}}
 @section('content')

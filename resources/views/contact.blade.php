@@ -1,11 +1,9 @@
 {{-- Header section --}}
-@extends('layout')
+@extends('layout.layout')
 
 {{-- Title section --}}
-@section('title')
-    Contactanos
-@endsection
-
+@section('title', 'Contactanos')
+    
 {{-- Body section --}}
 @section('content')
     <h1>

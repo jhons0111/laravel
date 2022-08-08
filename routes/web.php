@@ -21,8 +21,8 @@ Route::get('/', [homeController::class, 'index'])->name('home');
 
 //General pages
 Route::controller(generalController::class)->group(function(){
-    Route::get('about', 'aboutUs');
-    Route::get('contact', 'contactUs');
+    Route::get('sobre-nosotros', 'aboutUs');
+    Route::get('contacto', 'contactUs');
 });
 
 //Courses pages

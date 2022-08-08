@@ -1,14 +1,12 @@
 {{-- Header section --}}
-@extends('layout')
+@extends('layout.layout')
 
 {{-- Title section --}}
-@section('title')
-    About page
-@endsection
+@section('title', 'Acerca de nosotros')
 
 {{-- Body section --}}
 @section('content')
     <h1>
-        About page
+        Acerca de nosotros
     </h1>
 @endsection

@@ -1,10 +1,8 @@
 {{-- Header section --}}
-@extends('layout')
+@extends('layout.layout')
 
 {{-- Title section --}}
-@section('title')
-    Todos los cursos
-@endsection
+@section('title', 'Todos los cursos')
 
 {{-- Body section --}}
 @section('content')
